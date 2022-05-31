@@ -1,3 +1,40 @@
-#navbar {
-    
+:root {
+    --white-: rgb(255, 255, 255);
+    --red-: rgb(114, 14, 14);
+    --black-: rgba(27, 27, 27, 0.719);
+    --lightred-: rgb(252, 107, 107);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box; 
+}
+
+body {
+    font-size: 1.7rem;
+    font-family: 'Roboto Slab', serif, monospace;
+    line-height: 1.7;
+    color: var(--white-);
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background: var(--red-);
+    box-shadow: 0 1px 3px var(--lightred-);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 1.5rem 2rem;
 }
