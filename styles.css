@@ -1,7 +1,7 @@
 :root {
     --white-: rgb(255, 255, 255);
     --red-: rgb(114, 14, 14);
-    --black-: rgba(27, 27, 27, 0.719);
+    --black-: rgba(7, 7, 7, 0.904);
     --lightred-: rgb(252, 107, 107);
 }
 
@@ -36,5 +36,33 @@ body {
 .nav-list {
     display: flex;
     list-style: none;
-    margin: 1.5rem 2rem;
+    margin-right: 1.5rem;
+}
+
+.nav-list a {
+    display: block;
+    padding: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-);
+}
+
+.welcome-section {
+    background-color: var(--black-);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.welcome-section span {
+    font-size: 3.2rem;
 }
