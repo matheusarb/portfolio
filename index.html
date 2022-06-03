@@ -4,10 +4,11 @@
             <link rel="stylesheet" href="styles.css">
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+            <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+            <meta charset="UTF-8">
         </head>
 
-        <!--header-->
+        <!-- header -->
         <header>
             <nav id="navbar" class="nav">
                 <ul class="nav-list">
@@ -24,11 +25,35 @@
             </nav>
         </header>
 
-        <!--main-->
-        <main>
-            <section id="welcome-section">
-                
+        <!-- main -->
+        <!-- welcome-section -->
+        <body>
+            <section id="welcome-section" class="welcome-section">
+                    <h1>Hey, I'm Matthews <span>&#128521;</span></h1>
+                    <p><em>a frontend web developer</em></p>
             </section>
-        </main>
+
+            <section id="my-projects" class="projects-section">
+                <h2 class="projects-header">Check out some of my projects</h2>
+                <div class="projects-grid">
+                    <a class="project project-tile" href="https://codepen.io/matheusarb/pen/yLvEydP" target="_blank">
+                        <img class="project-image" src="\components\img\screenshot-tdp.png" alt="project">
+                        <p class="project-title">
+                            <span class="code"></span>
+                            Technical Documentation Page
+                            <span class="code"></span>
+                        </p>
+                    </a>
+                    <a class="project project-tile" href="https://codepen.io/matheusarb/pen/vYpRLbb" target="_blank">
+                        <img class="project-image" src="\components\img\screenshot-sf.png" alt="project">
+                        <p class="project-title">
+                            <span class="code"></span>
+                            Survey Form
+                            <span class="code"></span>
+                        </p>
+                    </a>
+                </div>
+            </section>
+        </body>
     </html>
 </DOCTYPE>

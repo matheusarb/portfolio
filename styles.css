@@ -3,11 +3,19 @@
     --red-: rgb(114, 14, 14);
     --black-: rgba(7, 7, 7, 0.904);
     --lightred-: rgb(252, 107, 107);
+    --lightblue-: #1b4137;
+    --grey-: rgb(105, 105, 105);
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 html {
@@ -63,6 +71,69 @@ h1 {
     font-size: 3.5rem;
 }
 
+h2 {
+    font-size: 2.4rem;
+}
+
+h1, h2 {
+    font-weight: 700px;
+    text-align: center;
+}
+
+.welcome-section > p {
+    color: var(--lightred-)
+}
+
+p {
+    color:var(--white-);
+}
+
 .welcome-section span {
     font-size: 3.2rem;
+}
+
+.projects-section {
+    text-align: center;
+    background: var(--lightblue-);
+    padding: 10rem 2rem;
+}
+
+.projects-header {
+    margin: 0 auto 5rem auto;
+    border-bottom: 0.1rem solid var(--white-);
+    max-width: 600px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 4.5rem;
+}
+
+.project {
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px var(--grey-);
+}
+
+.project-image {
+    height: calc(100% - 6rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+}
+
+a {
+    color: var(--white-);
+    text-decoration: none;
+}
+
+.code {
+    color: var(--red-);
 }
