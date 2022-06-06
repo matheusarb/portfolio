@@ -189,11 +189,11 @@ a {
 }
 
 @media (max-width: 600px) {
-    .btn {
+    .btn, .project-image, .project-title {
         width: 100%;
     }
 
-    .project-image, .project-title {
-        width: 100%;
+    .contacts-section {
+        background: var(--darkergreen-);
     }
 }
