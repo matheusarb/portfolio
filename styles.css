@@ -187,3 +187,13 @@ a {
     text-shadow: 1px 1px 1px black;
     transition: transform 0.3s ease-out;
 }
+
+@media (max-width: 600px) {
+    .btn {
+        width: 100%;
+    }
+
+    .project-image, .project-title {
+        width: 100%;
+    }
+}
